@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChef Stats</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+       <div class="one"> 
+       
+        <h1> Stats Viewer</h1>
+    </div>
+
+        <div class="user-container">
+            <p>Enter CodeChef Username:</p>
+            <div class="user-input-container">
+                <input type="text" id="username" placeholder="Enter username here">
+                <button id="fetch-stats">Search</button>
+            </div>
+        </div>
+        <div id="profile">
+            <h2>Profile</h2>
+            <div class="profile-card">
+                <img id="profile-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6e6dfLWx-aoUCClSmYEzeTzp0hHAhlNLJRFP-WyX01AuyERV" alt="Profile Picture">
+                <div class="profile-details">
+
+                    <h3 id="profile-name">saketh716</h3>
+                    <p id="profile-rating"></p>
+                    <p id="profile-rank"></p>
+                    <p id="profile-stars"></p>
+                    <p id="profile-hrating"></p>
+                </div>
+                <button id="link">GetProfileLink</button>
+            </div>
+        </div>
+
+        
+        <div id="heatmap" class="hidden">
+            <h2>Activity Heatmap</h2>
+            <canvas id="heatmap-canvas"></canvas>
+        </div>
+
+    
+        <div id="contest-performance" class="hidden">
+            <h2>Contest Performance</h2>
+            <canvas id="rating-chart"></canvas>
+            <div class="contest-table">
+                <h3>Contest Details</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Contest</th>
+                            <th>Date</th>
+                            <th>Rating</th>
+                            <th>Rank</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contest-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="container footer-container">
+        <div class="footer-column">
+            <h3>Codechef stats</h3>
+            <p>Easy way to check stats</p>
+        </div>
+        <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+                <li> <a href="tel:+919347166411" id="contactLink">Contack Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://www.instagram.com/saketh1607?igsh=eW52ZXIzMnZ3Z3Ax"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/kotagiri-saketh-560569219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 codechestats. All rights reserved.</p>
+    </div>
+</footer>
+</html>
