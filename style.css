@@ -42,7 +42,7 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
-    background-color:green;
+    background-color:red;
     border: none;
     border-radius: 5px;
     cursor: pointer;
